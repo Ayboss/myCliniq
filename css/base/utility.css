@@ -1,0 +1,41 @@
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 8rem;
+}
+@media (max-width: 56.25em) {
+    .u-margin-bottom-big {
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width: 37.5em) {
+    .u-margin-bottom-big {
+        margin-bottom: 4rem;
+    }
+}
+.u-margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 6rem;
+}
+
+.u-margin-top-large {
+    margin-top: 3rem;
+}
+.u-margin-bottom-aftersmall {
+    margin-bottom: 4rem;
+}
+@media (max-width: 61.9375em) {
+    .u-margin-bottom-aftersmall {
+        margin-bottom: 3rem
+    }
+}
+@media (max-width: 26.375em) {
+    .u-margin-bottom-aftersmall {
+        margin-bottom: 2rem
+    }
+}

@@ -1,0 +1,39 @@
+.section-booking {
+    padding: 10rem 0;
+    background-image: linear-gradient(to right bottom, #4169E1, #0F52BA);
+}
+.book {
+    background-image: linear-gradient(105deg, 
+    rgba(255, 255, 255, .9) 0%, 
+    rgba(255, 255, 255, .9) 50%,
+    transparent 50%), 
+    url(../../image/pdn.jpg);
+    background-size: cover;
+    width: 122rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .44);
+    margin: 0 auto;
+    border-radius: 3px;
+    text-align: left;
+}
+.book__form {
+    width: 50%;
+    padding: 4rem;
+}
+@media (max-width: 61.9375em) {
+    .book__form {
+        width: 70%;
+    }
+    .book {
+        background-image: linear-gradient(105deg, 
+        rgba(255, 255, 255, .9) 0%, 
+        rgba(255, 255, 255, .9) 70%,
+        transparent 70%), 
+        url(../../image/pdn.jpg);
+    }
+}
+
+.footer {
+    padding: 4rem 0;
+    background-color: #333;
+    font-size: 1.4rem;
+}

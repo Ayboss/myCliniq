@@ -1,0 +1,101 @@
+/*
+COLORS:
+
+Royal blue: #4169E1
+rgba(65, 105, 225, 0.8)
+
+Cornflower Blue: #6495ED	
+rgb(100, 149, 237)
+
+Saphire blue: #0F52BA
+rgba(15, 82, 186, 0.8)
+
+blue => #0000FF rgb(0, 0, 255)
+Blue Gray	=> #7393B3	rgb(115, 147, 179)
+Blue Green	=> #088F8F	rgb(8, 143, 143)
+Bright Blue	=> #0096FF
+Cobalt Blue	#0047AB	rgb(0, 71, 171)
+Dark Blue	#00008B	rgb(0, 0, 139)
+Egyptian Blue	#1434A4	rgb(20, 52, 164)
+Glaucous	#6082B6	rgb(96, 130, 182)
+Indigo	#3F00FF	rgb(63, 0, 255
+Neon Blue	#1F51FF	rgb(31, 81, 255
+Ultramarine	#0437F2	rgb(4, 55, 242)
+Steel Blue	#4682B4	rgb(70, 130, 180
+*/
+
+:root {
+    --color-primary: #c69963;
+    --color-primary-dark: #828451;
+
+    --color-secondary: #101d2c;
+
+    --color-grey-light-1: #f9f7f6;
+    --color-grey-light-2: #aaaaaa;
+
+    --color-grey-dark-1: #54483a;
+    --color-grey-dark-2: #6d5d4b;
+
+    --font-primary: "Nunito", sans-serif;
+    --font-display: "Josefin Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+
+/*default browser(user)-font = 16px */
+/*1em = 16px;   1px = .0625em*/
+
+/* tablet-land */
+@media only screen and (max-width: 75em /*<=1200px*/) {
+    html {
+        /*1rem = 9px; 9/16 = 0.5625 */
+        font-size: 56.25%;
+    }
+}
+/* tablet-port */
+@media only screen and (max-width: 56.25em /*<=900px*/) {
+    html {
+        /*1rem = 8px; 8/16 = 0.5 */
+        font-size: 50%;
+    }
+}
+/* phone */
+@media only screen and (max-width: 37.5em /*<=600px*/) {
+    html {
+        /*1rem = 7px; 7/16 = 0.4375 */
+        font-size: 43.75%;
+    }
+}
+/* big-desktop */
+@media only screen and (min-width: 112.5em /*1800px +*/) {
+    html {
+        /*1rem = 12px; 12/16 = 0.75 */
+        font-size: 80%;
+    }
+}
+body {
+    /* font-size: 16px; */
+    font-family: "Lato", sans-serif;
+    color: #777;
+    line-height: 1.7;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 37.5em) {
+    body {
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: #fff;
+    color: #6495ED;
+}

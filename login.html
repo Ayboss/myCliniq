@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/base/animations.css">
+<link rel="stylesheet" href="css/base/base.css">
+
+<link rel="stylesheet" href="css/layouts/signInsignUp.css">
+
+<link rel="stylesheet" href="css/pages/home.css">
+<link rel="shortcut icon" type="image/png" href="image/.png">
+
+<!-- core styling plus all of the icon styles for fontwesome -->
+<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+<!-- typeface files that the above css references and depends on -->
+<link rel="stylesheet" href="fontawesome-free-5.13.0-web/webfonts">
+<!-- loads all of the base features plus all of the icon styles that I need when using fontawesome -->
+<script defer src="fontawesome-free-5.13.0-web/js/all.js"></script>
+
+
+<!-- Latest compiled and minified css -->
+<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-reboot.css">
+<link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-reboot.min.css">
+<!-- Latest compiled and minified Javascript -->
+<script src="bootstrap-4.5.0-dist/js/bootstrap.bundle.js"></script>
+<script src="bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+<script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+
+<script src="bootstrap-4.5.0-dist/js/jquery-3.4.1.min.js"></script>
+
+<title> signIn/signUp </title>
+</head>
+
+<body>
+<div class="containerS">
+    <div class="container__forms">
+            <form action="submit" class="signUp__form">
+                <h2 class="signUp__form--title">Sign up</h2>
+
+                <div class="signUp__form--input">
+                    <i class="fa fa-user"> </i>
+                    <input type="text" placeholder="Username" class="form__input" required>
+                </div>
+
+                <div class="signUp__form--input">
+                    <i class="fa fa-envelope"> </i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div class="signUp__form--input">
+                    <i class="fa fa-lock"> </i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <input type="button" class="btn trans" value="sign up">
+                <p class="social__text"> Or sign up with social platforms</p>
+
+                <div class="social__media">
+                    <a href="#" class="social__icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+
+                    <a href="#" class="social__icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+
+                    <a href="#" class="social__icon">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+  
+                    <a href="#" class="social__icon">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                </div>
+            </form>
+            <form action="#" class="signIn__form">
+                <h2 class="signIn__form--title">Sign in</h2>
+
+                <div class="signIn__form--input">
+                    <i class="fa fa-user"> </i>
+                    <input type="text" placeholder="Username" class="form__input" required>
+                </div>
+
+                <div class="signIn__form--input">
+                    <i class="fa fa-lock"> </i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <input type="button" class="btn trans" value="login">
+                <p class="social__text"> Or sign in with social platforms</p>
+
+                <div class="social__media">
+                    <a href="#" class="social__icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+
+                    <a href="#" class="social__icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+
+                    <a href="#" class="social__icon">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+
+                    <a href="#" class="social__icon">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                </div>
+            </form>
+            <div class="panel left__panel">
+                <div class="content">
+                    <h3> New Here?</h3>
+                    <p> Are you a qualified doctor and would like to join this platform? Kindly
+                        click on the button below
+                    </p>
+                    <button class="btn transparent" id="signUp-button">
+                        Sign Up
+                    </button>
+                </div>
+                <img src="image/logo-doctor-new.svg" alt="" class="image">
+            </div>
+            <div class="panel right__panel">
+                <div class="content">
+                    <h3 class=""> One of us?</h3>
+                    <p class=""> Already a registered doctor? Kindly
+                        click on the button below
+                    </p>
+                    <button class="btn transparent" id="signIn-button">
+                        Sign In
+                    </button>
+                </div>
+    
+                <img src="image/therapist.svg" alt="" class="image">
+            </div>
+    </div>
+<!-- 
+    <div class="container__panels">
+        
+    </div> -->
+</div>
+
+<script src="loginApp.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+
+</html>

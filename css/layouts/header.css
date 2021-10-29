@@ -1,0 +1,109 @@
+.head {
+    height: 85vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(65, 105, 225, 0.8),
+    rgba(15, 82, 186, 0.8)),
+    url(../../image/main\ image.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+@supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)){
+    .head {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 63vh, 65% 63vh, 63% 570vh, 0 57vh);
+    clip-path: polygon(0 0, 100% 0, 100% 63vh, 65% 63vh, 63% 57vh, 0 57vh);
+    height: 70vh;
+    }
+}
+
+@media (max-width: 37.5em){
+    .head {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 63vh, 65% 63vh, 63% 570vh, 0 57vh);
+        clip-path: polygon(0 0, 100% 0, 100% 63vh, 65% 63vh, 63% 570vh, 0 57vh);
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 37.5em),
+        (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        (min-width: 125em){
+    .head {
+    background-image: linear-gradient(to right bottom,
+    rgba(65, 105, 225, 0.8),
+    rgba(15, 82, 186, 0.8)),
+    url(../../image/main\ image.jpg);
+    }
+}
+
+.chief {
+    font-size: 1.4rem;
+    background-color: #ffff;
+    height: 17rem;
+    
+    top: 0;
+    z-index: 1200;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+
+    display: flex;
+    align-items: stretch;
+}
+.header {
+    border-bottom: var(--line);
+
+    display: flex;
+    justify-content: space-between; /*along the main axis (horizontally)*/
+}
+@media only screen and (max-width: 32.5em) {
+    .header {
+        flex-wrap: wrap; /*enters new row if space is insufficient*/
+        align-content: space-around;
+    }
+  }
+  
+.left__header {
+    flex: 0 0 15%;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-image: linear-gradient(to right bottom,
+    rgba(65, 105, 225, 0.8),
+    rgba(15, 82, 186, 0.8))
+}
+@supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)){
+    .left__header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    }
+}
+.sidebar {
+    /*
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 18%;
+    */
+    flex: 0 0 55%;
+
+    display: flex;
+    justify-content: space-between; 
+}
+.bottom__header {
+    display: flex;
+    justify-content: start;
+}
+.bottom__header--left,
+.bottom__header--right {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.bottom__header--left-1 {
+
+}
+.bottom__header--left-2 {
+    
+}
+.bottom__header--right-1 {
+    
+}.bottom__header--right-2 {
+    
+}
